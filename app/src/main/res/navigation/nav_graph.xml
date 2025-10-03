@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.startupshowcase.app.presentation.home.HomeFragment"
+        android:label="@string/nav_home"
+        tools:layout="@layout/fragment_home">
+        
+        <action
+            android:id="@+id/action_home_to_company_detail"
+            app:destination="@id/companyDetailFragment" />
+        
+        <action
+            android:id="@+id/action_home_to_create_company"
+            app:destination="@id/createCompanyFragment" />
+    </fragment>
+    
+    <fragment
+        android:id="@+id/reelsFragment"
+        android:name="com.startupshowcase.app.presentation.reels.ReelsFragment"
+        android:label="@string/nav_reels"
+        tools:layout="@layout/fragment_reels" />
+    
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.startupshowcase.app.presentation.search.SearchFragment"
+        android:label="@string/nav_search" />
+    
+    <fragment
+        android:id="@+id/savedFragment"
+        android:name="com.startupshowcase.app.presentation.saved.SavedFragment"
+        android:label="@string/nav_saved" />
+    
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.startupshowcase.app.presentation.profile.ProfileFragment"
+        android:label="@string/nav_profile" />
+    
+    <fragment
+        android:id="@+id/companyDetailFragment"
+        android:name="com.startupshowcase.app.presentation.company.CompanyDetailFragment"
+        android:label="Company Detail">
+        
+        <argument
+            android:name="companyId"
+            app:argType="string" />
+    </fragment>
+    
+    <fragment
+        android:id="@+id/createCompanyFragment"
+        android:name="com.startupshowcase.app.presentation.company.CreateCompanyFragment"
+        android:label="Create Company" />
+
+</navigation>

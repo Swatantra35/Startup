@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    app:strokeWidth="0dp">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+        
+        <ImageView
+            android:id="@+id/image_view_cover"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/backgrounds/scenic"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        
+        <ImageView
+            android:id="@+id/image_view_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="12dp"
+            android:elevation="4dp"
+            tools:src="@tools:sample/avatars"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        
+        <ImageView
+            android:id="@+id/image_view_verified"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_verified"
+            android:visibility="gone"
+            app:tint="@color/primary"
+            app:layout_constraintEnd_toEndOf="@id/image_view_logo"
+            app:layout_constraintBottom_toBottomOf="@id/image_view_logo" />
+        
+        <TextView
+            android:id="@+id/text_view_company_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text="Innovative Startup Inc."
+            app:layout_constraintTop_toBottomOf="@id/image_view_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/button_follow" />
+        
+        <TextView
+            android:id="@+id/text_view_tagline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="Revolutionizing the tech industry"
+            app:layout_constraintTop_toBottomOf="@id/text_view_company_name"
+            app:layout_constraintStart_toStartOf="@id/text_view_company_name"
+            app:layout_constraintEnd_toEndOf="parent" />
+        
+        <TextView
+            android:id="@+id/text_view_industry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:background="@drawable/bg_chip"
+            android:textSize="12sp"
+            android:textColor="@color/primary"
+            tools:text="Technology"
+            app:layout_constraintTop_toBottomOf="@id/text_view_tagline"
+            app:layout_constraintStart_toStartOf="parent" />
+        
+        <TextView
+            android:id="@+id/text_view_followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            tools:text="1.2K followers"
+            app:layout_constraintTop_toTopOf="@id/text_view_industry"
+            app:layout_constraintBottom_toBottomOf="@id/text_view_industry"
+            app:layout_constraintStart_toEndOf="@id/text_view_industry" />
+        
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="@string/follow"
+            android:textSize="12sp"
+            app:cornerRadius="18dp"
+            style="@style/Button.Primary"
+            app:layout_constraintTop_toBottomOf="@id/image_view_cover"
+            app:layout_constraintEnd_toEndOf="parent" />
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Startup Showcase</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_reels">Reels</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_saved">Saved</string>
+    <string name="nav_profile">Profile</string>
+    
+    <!-- Home Screen -->
+    <string name="featured_companies">Featured Companies</string>
+    <string name="explore_companies">Explore Companies</string>
+    <string name="filter_by_category">Filter by Category</string>
+    <string name="create_company">Create Company</string>
+    
+    <!-- Company -->
+    <string name="followers">Followers</string>
+    <string name="follow">Follow</string>
+    <string name="following">Following</string>
+    <string name="verified">Verified</string>
+    <string name="about">About</string>
+    <string name="products">Products</string>
+    <string name="services">Services</string>
+    <string name="gallery">Gallery</string>
+    <string name="contact">Contact</string>
+    <string name="website">Website</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    
+    <!-- Reels -->
+    <string name="likes">Likes</string>
+    <string name="views">Views</string>
+    <string name="comments">Comments</string>
+    <string name="share">Share</string>
+    <string name="upload_reel">Upload Reel</string>
+    
+    <!-- Dashboard -->
+    <string name="dashboard">Dashboard</string>
+    <string name="analytics">Analytics</string>
+    <string name="manage_company">Manage Company</string>
+    <string name="manage_reels">Manage Reels</string>
+    <string name="profile_views">Profile Views</string>
+    <string name="engagement_rate">Engagement Rate</string>
+    <string name="top_performing_reels">Top Performing Reels</string>
+    
+    <!-- Auth -->
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="display_name">Display Name</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    
+    <!-- Common -->
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="search">Search</string>
+    <string name="filter">Filter</string>
+    <string name="sort">Sort</string>
+    <string name="loading">Loading…</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="no_data">No data available</string>
+    <string name="try_again">Try Again</string>
+</resources>
